@@ -1,0 +1,396 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/*** Heading styles ***/
+
+h1 {
+	font: lighter 24px 'Roboto Slab', serif;
+	color: #333;
+	margin-bottom: 15px;
+}
+h2 {
+	font: lighter 24px 'Roboto Slab', serif;
+	color: #333;
+}
+h2 span, h3 span{
+	font-weight: bold;
+}
+h3 {
+	font: lighter 20px 'Roboto Slab', serif;
+	color: #333;
+	margin-bottom: 15px;
+}
+h4 {
+	font: lighter 16px 'Roboto Slab', serif;
+	color: #333;
+	margin-bottom: 5px;
+}
+h5 {
+	
+}
+h6 {
+	
+}
+
+.clear{
+	clear:both;
+}
+input, textarea {
+	outline: 0;
+}
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	list-style: none;
+	border: 0 none;
+}
+a {
+	text-decoration: none;
+	color: #808080;
+	outline: none !important;
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	
+max-width:100%;
+height: auto;
+
+}
+p {
+	font: lighter 13px/20px Arial, sans-serif;
+	color: #666;
+	margin: 5px 0px 10px 0px;
+}
+p a {
+	color: #295d97;
+}
+/* -=- global style rules -=-*/
+body {
+	font: 12px/18px 'Open Sans', sans-serif;
+	background: #FA9625;
+	
+}
+.wrapper {
+	max-width: 1170px;
+	background: #FFF;
+	margin:50px auto;
+}
+header {
+	width: 100%;
+	float: left;
+}
+/*** Logo And Menu part ***/
+header .logo {
+	width: 285px;
+	margin: 25 0px;
+	padding: 15px 10px;
+	float: left;
+}
+header .logo a {
+	display: block;
+}
+.awards{
+	float: right;
+}
+.awards img{
+	margin: 13px 15px 0px 0px;
+}
+
+.nav-bar{
+	width: 100%;
+	float: left;
+	background: #f89a1d;
+	height: 48px;
+	padding: 1px 0px;
+	font: 15px 'Roboto Slab', serif;
+	font-weight: bold;
+
+}
+.nav-bar ul{
+	width: 1030px;
+	margin:0 auto;
+}
+.nav-bar ul li{
+	float: left;
+}
+.nav-bar ul li a{
+	color: #FFF;
+	display: block;
+	line-height: 48px;
+	padding: 0px 15px;
+}
+.nav-bar ul li a:hover, .nav-bar ul li a.active{
+	background:#0ABCF1;
+	color: #333;
+}
+/*.nav-bar, header{
+	position: fixed;*/
+}
+.content-area{
+	width: 1140px;
+	float: left;
+	padding: 25px 15px 15px 15px;
+}
+.slider-area {
+	width: 772px;
+	height: 518px;
+	float: left;
+}
+.owl-controls{
+	position: absolute;
+	top: 244px;
+	width: 100%;
+}
+.slider-area .owl-controls .owl-prev {
+	width: 37px;
+	height: 40px;
+	background: url(../img/arrows.png) no-repeat 0px 0px;
+	text-indent: -9999px;
+	opacity: 1;
+	float: left;
+	margin-left: 0px;
+}
+.slider-area .owl-controls .owl-next {
+	width: 37px;
+	height: 40px;
+	background: url(../img/arrows.png) no-repeat -37px 0px;
+	text-indent: -9999px;
+	opacity: 1;
+	float: right;
+	margin-right: 0px;
+}
+.side-bar{
+	width: 317px;
+	padding: 5px 15px 15px;
+	height: 520px;
+	float: right;
+	background: ;
+}
+.outer-box{
+	width: 315px;
+	height: 512px;
+	border: 1px #90908f solid;
+	padding: 1px;
+}
+.inner-box{
+	width: 273px;
+	height: 470px;
+	border: 1px #90908f solid;
+	padding: 20px;
+	background-color: #FAD907;
+}
+.facebook{
+	padding-left: 90px;
+	background: url("../img/logo-facebook copy.png") no-repeat 5px 0px;
+	font: 14px 'Roboto Slab', serif;
+	color: #333;
+	margin: 15px 0px 10px 0px;
+}
+.facebook a, .twitter a, .tripadvisor a{
+	color: #333;
+}
+.facebook a:hover, .twitter a:hover, .tripadvisor a:hover{
+	color: #f89a1d;
+}
+.twitter{
+	padding-left: 90px;
+	background: url("../img/twitter 1.png") no-repeat 5px 0px;
+	font: 14px 'Roboto Slab', serif;
+	color: #333;
+	margin: 15px 0px 10px 0px;
+}
+.tripadvisor{
+	padding-left: 90px;
+	background: url(../img/instagram.png) no-repeat 5px 0px;
+	font: 14px 'Roboto Slab', serif;
+	color: #333;
+	margin: 5px 0px 10px 0px;
+}
+.whatsapp{
+	padding-left: 90px;
+	background: url(../img/WhatsApp.png) no-repeat 5px 0px;
+	font: 14px 'Roboto Slab', serif;
+	color: #333;
+	margin: 5px 0px 10px 0px;
+}
+.bounce-back{
+	
+	float: center;
+	width: 100%;
+}
+.bounce-back a{
+	display: block;
+	float: center;
+}
+.form{
+	margin-top: 20px;
+}
+label{
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+.input{
+	max-width: 350px;
+	width: 100%;
+	height: 28px;
+	border: 1px #CCC solid;
+	padding: 0px 5px;
+}
+.text-area{
+	max-width: 350px;
+	width: 100%;
+	height: 80px;
+	border: 1px #CCC solid;
+	padding: 5px;
+}
+.submit{
+	width: 100px;
+	height: 30px;
+	display:block;
+	margin-top: 10px;
+	background: #B81317;
+	color: #FFF;
+}
+.map iframe{
+	width: 100%;
+}
+
+footer{
+	width: 100%;
+	float: left;
+	font: 12px 'Roboto Slab', serif;
+	color: #333;
+}
+.copy{
+	float: left;
+	padding: 5px 0px 20px 15px;
+}
+.designed {
+	float: right;
+	padding: 5px 15px 20px 0px;
+}
+.designed a{
+	color: #dc7e00;
+}
+
+.inner-contents{
+	width: 742px;
+	height: auto;
+	float: left;
+	border: 1px #CCC solid;
+	padding: 15px;
+	min-height: 488px;
+}
+.port-row{
+	border-bottom: 1px #dfdfdf solid;
+	width: 100%;
+	float: left;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+}
+.logo-area{
+	width: 200px;
+	float: left;
+	text-align: center;
+}
+.content-text{
+	width: 500px;
+	float: left;
+}
+#read_more {
+	display: none;
+}
+strong{
+	font-weight: bold;
+}
